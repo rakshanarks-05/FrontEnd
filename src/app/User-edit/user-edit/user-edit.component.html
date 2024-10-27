@@ -1,0 +1,28 @@
+<div class="container   mt-5 card shadow-none p-3 mb-5 bg-body-tertiary rounded">
+    <div class="row">
+      <h1>Update User</h1>
+  <form  [formGroup]="UserForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Nic : </label>
+      <input type="text" class="form-control" id="exampleInputEmail1" formControlName="nic">
+    
+      <label for="exampleInputPasswozzzrd1" class="form-label">First Name: </label>
+      <input type="text" class="form-control" id="exampleInputPassword1" formControlName="firstName">
+  
+      <label for="exampleInputPassword1" class="form-label">last Name: </label>
+      <input type="text" class="form-control" id="exampleInputPassword1" formControlName="lastName">
+
+      <label for="exampleInputPassword1" class="form-label">Email: </label>
+      <input type="text" class="form-control" id="exampleInputPassword1" formControlName="email">
+
+      <label for="exampleInputPassword1" class="form-label">password: </label>
+      <input type="text" class="form-control" id="exampleInputPassword1" formControlName="password">
+  
+  
+    </div>
+    <button type="submit" class="btn btn-primary me-3">Submit</button>
+    <button type="reset" class="btn btn-secondary" (click)="cancel()">Cancel </button>
+  </form>
+    </div>
+  </div>
+  
