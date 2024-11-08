@@ -46,7 +46,7 @@ export class UserService {
 export interface User{
   id:number,
   nic:number,
-  firstname:string,
+  firstName:string,
   lastname:string,
   email:string,
   password:string,

@@ -22,14 +22,32 @@
         <div class="mb-3">
           <label for="assignee" class="form-label">Assignee: </label>
           <select class="form-control" id="assignee" formControlName="assigneeId">
-            <option *ngFor="let user of Users" [value]="user.id">{{value.id}}</option>
-
-            
-
+            <option *ngFor="let user of Users" [value]="user.id">{{user.firstName}}</option>
           </select>
         </div>
 
       </div>
+      <div>
+      <h3>Enter the CheckLists</h3><hr>
+      <div formArrayName="checklists">
+        <div class="col mb-3">
+        <button class="btn btn-success" type="button" (click)="addChecklist()">Add</button>
+      </div>
+        <div class="row" *ngFor="let CheckLists of myCheckLists.controls; let i=index">
+          <div class="col" [formGroupName]="i">
+            <div class="mb-3">
+              <input type="checkbox" class="form-check input" id="isDone" formControlName="isDone">
+              <input type="text" class="form-control" id="name">
+            </div>
+          </div>
+         
+          <div class="col">
+            <button class="btn btn-danger" (click)="removeChecklist(i)">Remove</button>
+          </div>
+         </div>
+         </div>
+        </div>
+
       <div class="mb-3 mx-auto">
         <button type="submit" class="btn btn-primary me-3">Submit</button>
         <button type="reset" class="btn btn-secondary" (click)="cancel()">Cancel </button>
@@ -37,3 +55,7 @@
     </form>
   </div>
 </div>
+<!-- <ul>
+  <li *ngFor="let user of Users">{{user.firstName}}</li>
+</ul> -->
+

@@ -14,6 +14,8 @@ import { SearchPipe } from './Search Pipe/search.pipe';
 import { UserListComponent } from './user-List/list/user-list/user-list.component';
 import { UseraddComponent } from './user-add/useradd/useradd.component';
 import { UserEditComponent } from './User-edit/user-edit/user-edit.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { UserEditComponent } from './User-edit/user-edit/user-edit.component';
     UserListComponent,
     UseraddComponent,
     UserEditComponent,
+    RegisterComponent,
+    LoginComponent,
    
     
     

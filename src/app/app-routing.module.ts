@@ -6,6 +6,8 @@ import { EditComponent } from './Task-Edit/edit/edit.component';
 import { UserListComponent } from './user-List/list/user-list/user-list.component';
 import { UseraddComponent } from './user-add/useradd/useradd.component';
 import { UserEditComponent } from './User-edit/user-edit/user-edit.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {path:'',component:ListComponent},
@@ -13,7 +15,9 @@ const routes: Routes = [
   {path:'edit/:id',component:EditComponent},
   {path:'userList',component:UserListComponent},
   {path:'user-add',component:UseraddComponent},
-  {path:'user-edit/:id',component:UserEditComponent}
+  {path:'user-edit/:id',component:UserEditComponent},
+  {path:'register',component:RegisterComponent},
+  {path:'login',component:LoginComponent}
   
 ];
 
